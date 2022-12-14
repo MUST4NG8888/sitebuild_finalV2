@@ -48,6 +48,7 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  align-items: stretch;
   gap: 90px 20px;
   justify-content: center;
   max-width: 1000px;
@@ -73,8 +74,7 @@ header h1 {
   color:#242d38;
   width: 100%;
   max-width: 400px;
-  min-height: 415px;
-  height: fit-content;
+  min-height: 430px;
 }
 
 .box div:nth-last-child(2) {
