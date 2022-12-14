@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', Helvetica, sans-serif;
+}
+
+
+body {
+  width: 100vw;
+  background: #ffeedf;
+}
+
+#root {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #145434;
+  border-bottom: 2px solid #145434;
+  height: 60px;
+  width: 100%;
+  background-color: #ffeedf;
+}
+
+#wrapper {
+  position: relative;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 60px;
+  justify-content: center;
+  max-width: 1200px;
+  height: 100%;
+}
+
+.material-symbols-outlined {
+  font-size: 36px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px;
+  position: relative;
+  background: #145434;
+  color:#ffeedf;
+  width: 100%;
+  max-width: 450px;
+  height: 250px;
+}
+
+.number {
+  top: -20px;
+  left: -20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #145434;
+  font-size: 24px;
+  color: #145434;
+  background: #ffeedf;
+}
+
+
+.arrow {
+  position:absolute;
+  right: 0;
+  color:#145434;
+  transition: 0.4s ease-in-out;
+}
+
+
+button {
+  right: -15px;
+  bottom: -20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffeedf;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #145434;
+  color: #145434;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.4s ease-in-out;
+}
+
+
+
+button:hover {
+  background-color: #145434;
+  color: #ffeedf;
+  border-color: #ffeedf;
+}
+
+
+button:hover .arrow {
+  color:#ffeedf
+}
+
+p {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
