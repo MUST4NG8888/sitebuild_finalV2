@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Space Grotesk', Helvetica, sans-serif;
+  font-family: 'Poppins', Helvetica, sans-serif;
 }
 
 
 body {
   width: 100vw;
-  background: #ffeedf;
+  background: #242d38;
 }
 
 #root {
@@ -30,11 +29,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #145434;
-  border-bottom: 2px solid #145434;
+  color: #efd592;
+  border-bottom: 1px solid #efd592;
   height: 60px;
   width: 100%;
-  background-color: #ffeedf;
+  background-color: #242d38;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 #wrapper {
@@ -43,14 +48,14 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 60px;
+  gap: 90px 20px;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 1000px;
   height: 100%;
 }
 
 .material-symbols-outlined {
-  font-size: 36px;
+  font-size: 24px;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
@@ -62,31 +67,52 @@ header {
 .box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 60px;
   padding: 40px;
   position: relative;
-  background: #145434;
-  color:#ffeedf;
+  background: #efd592;
+  color:#242d38;
   width: 100%;
-  max-width: 450px;
-  height: 250px;
+  max-width: 400px;
+  min-height: 415px;
+  height: fit-content;
 }
+
+.box div:nth-last-child(2) {
+  margin-top: 10px;
+  border-top: 1px solid #242d38;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
 
 .number {
   top: -20px;
-  left: -20px;
+  left: 45%;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  border: 2px solid #145434;
+  border: 1px solid #efd592;
   font-size: 24px;
-  color: #145434;
-  background: #ffeedf;
+  color: #efd592;
+  background: #242d38;
 }
 
 
@@ -99,18 +125,14 @@ header {
 
 
 button {
-  right: -15px;
-  bottom: -20px;
+  left: 10%;
+  bottom: -30px;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #ffeedf;
-  width: 200px;
-  height: 50px;
-  border: 2px solid #145434;
-  color: #145434;
-  font-weight: bold;
+  background: #242d38;
+  width: calc(100% - 80px);
+  height: 60px;
+  border: 1px solid #efd592;
+  color: #efd592;
   font-size: 14px;
   transition: 0.4s ease-in-out;
 }
@@ -118,22 +140,21 @@ button {
 
 
 button:hover {
-  background-color: #145434;
-  color: #ffeedf;
-  border-color: #ffeedf;
+  background-color: #efd592;
+  color: #242d38;
+  border-color: #242d38;
 }
 
 
-button:hover .arrow {
-  color:#ffeedf
-}
 
-p {
-  font-size: 18px;
-}
 
-h6 {
-  font-size: 18px;
-  font-weight: bold;
-}
 
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 16px;
+  }
+  .box {
+    height: auto;
+  }
+}
